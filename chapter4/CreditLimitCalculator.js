@@ -64,3 +64,5 @@ class LimitCalculator{
 
     }
 }
+
+module.exports = {LimitCalculator}
