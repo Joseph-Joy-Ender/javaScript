@@ -1,68 +1,58 @@
-class LimitCalculator{
-    _accountNumber;
-    _beginningBalance;
-    _totalItems;
-    _totalOfCredits;
-    _creditLimit;
-   get getAccountNumber(){
-       return this._accountNumber;
-   }
+let prompt = require("prompt-sync")();
+let priceForItemSold;
+const salesCalculator = () =>{
+    let totalOfItemSold = 0;
+    let condition = true;
 
-   // set setAccountNumber(accountNumber){
-   //     this._accountNumber = accountNumber;
-   // }
+    let priceOfItems = Number(prompt("Enter price of item sold: "));
+    totalOfItemSold += priceOfItems;
 
-   get getBeginningBalance(){
-       return this._beginningBalance;
-   }
+    let answer = prompt("Do you wish to continue: ");
+    if (answer === 'no') condition = false;
 
-   set setBeginningBalance(beginningBalance){
-       this._beginningBalance = beginningBalance;
-   }
+    while (condition){
+        priceOfItems = prompt("Enter price of item sold: ");
 
-   get getTotalItems(){
-       return this._totalItems;
-   }
+        totalOfItemSold += priceOfItems;
 
-   set setTotalItems(totalItems){
-       this._totalItems = totalItems;
-   }
+        answer = prompt("Do you wish to continue: ");
 
-   get getTotalOfCredits(){
-       return this._totalOfCredits;
-   }
-
-   set setTotalOfCredits(totalOfItems){
-       return this._totalOfCredits = totalOfItems;
-   }
-
-   get getCreditLimit(){
-       return this._creditLimit;
-   }
-
-   set setCreditLimit(creditLimit) {
-       return this._creditLimit = creditLimit;
-   }
-
-
-    calculateNewBalance = () =>{
-        let newBalance = this.getBeginningBalance() + this.getTotalItems() - this.getTotalOfCredits();
-
-        this.displayMessage(newBalance);
-        return newBalance;
+        if (answer === 'no') condition = false;
     }
+    setPriceForItemSold(totalOfItemSold);
+    console.log("Total of item sold is: ", getPriceForItemSold());
+    console.log("Salary is: ", getSalary());
+    console.log("Percentage is: ", getPercentage());
+    console.log("Calculated commission is: ",calculateCommission());
+    console.log("Total wages is: ", calculateTotalWage());
 
-    displayMessage(newBalance) {
-        if (newBalance > this.getCreditLimit){
-            console.log("Credit limit exceeded");
-        }
-    }
+}
 
+function getPercentage() {
+    return 0.09;
+}
 
-    setAccountNumber(accountNumber) {
-       return this._accountNumber = accountNumber;
+function getPriceForItemSold() {
+    return priceForItemSold;
+}
+function getSalary(){
+    return 200;
+}
 
+function setPriceForItemSold(priceForItemSolds) {
+    if (priceForItemSolds < 0){
+        priceForItemSold = 0;
+    }else {
+        priceForItemSold = priceForItemSolds;
     }
 }
 
-module.exports = {LimitCalculator}
+const calculateCommission = () =>{
+    return getPercentage() * getPriceForItemSold();
+}
+
+function calculateTotalWage(){
+    return calculateCommission() + getSalary();
+}
+
+salesCalculator();
