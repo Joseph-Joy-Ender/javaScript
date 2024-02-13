@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Writing Example</title>
+</head>
+<body>
+<button id="downloadButton">Download File</button>
+
+  <script>
+    document.getElementById(`downloadButton`).addEventListener('click', function (){
+      const content = 'Hello, Joy!';
+      const blob = new Blob([content], {type: 'text/plain'});
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'example.txt';
+      a.textContent = 'Download File';
+
+      document.body.appendChild(a);
+      a.click();
+
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>
