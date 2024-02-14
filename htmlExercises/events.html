@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div class="firstDiv">First Div</div>-->
+<!--<a href="www.google.com">Google</a>-->
+
+
+<!--<button class="btn" id="btnId" >Click</button>-->
+
+
+
+<div>
+    <div style="color: rgb(11, 11, 11) ">Welcome to my guess game</div>
+    <hr>
+    <label htmlFor="guess"> Guess A name
+        <br>
+        <input  class="guess"  value="" placeholder="enter a name"/>
+    </label>
+</div>
+<div class="response"> </div>
+<!--<p class="btn">No handler here</p>-->
+<script>
+
+let luckyName = "Joy";
+const userInput = document.querySelector(".guess");
+userInput.addEventListener('input', ()=>{
+    userInput.value===luckyName? document.querySelector(".response").innerHTML = "Congratulations"
+        : document.querySelector(".response").innerHTML="Try Again";
+})
+
+
+  //   let buttonId = document.getElementById("btnId");
+  //   buttonId.addEventListener('click', function (){
+  //      const div = document.createElement('div');
+  //      div.innerHTML  = 'I love you';
+  //      document.querySelector(".firstDiv").appendChild(div)
+  //   } )
+  // let button = document.querySelector(".btn");
+  // let allButtons = document.querySelectorAll('.btn');
+ // button.addEventListener("click", () =>{
+     // for (let i = 0; i <allButtons.length ; i++) {
+     //     allButtons[i].innerHTML  = 'Joyyy';
+   //   }
+ // });
+</script>
+</body>
+</html>
