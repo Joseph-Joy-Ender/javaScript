@@ -6,15 +6,15 @@
 
 .card-image{
     position: relative;
-    height: 150px;
-    width: 150px;
+    /*height: 100px;*/
+    width: 120px;
     background-color: #FFF;
     padding: 3px;
 }
 
 .card{
     width: 400px;
-    height: 530px;
+    height: 560px;
     border-radius: 25px;
     background-color: #FFF;
     padding-left: 1.3rem;
@@ -25,10 +25,6 @@
     height: 27%;
     width: 25%;
     padding-top: 1rem;
-    /*padding-right: 2rem;*/
-    /*object-fit: cover;*/
-    /*border-radius: 50%;*/
-    /*border: 4px solid #4070F4;*/
 }
 
 body{
@@ -45,11 +41,20 @@ body{
 
 .card-img-para{
     padding-left: 1rem;
+    padding-top: 1rem;
 
 }
 
-.paragraph{
+.handle{
     padding-top: 1rem;
+    /*font-size: 1.1rem;*/
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #1e323f;
+
 }
 
 .slide-content{
@@ -62,16 +67,31 @@ body{
     display: flex;
 
 
+
 }
 
 .image-content{
     row-gap: 5px;
     margin: 0;
 }
+
 .description{
     font-size: 1.3rem;
     font-weight: 500;
-    line-height: 2rem;
-    /*padding-bottom: -15px;*/
+    line-height: 2.3rem;
+    color: #1e323f;
+
+}
+
+.jibola{
+    height: 85px;
+    width: 89px;
+}
+
+.twitterName{
+    color: #1e323f;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 30px;
 
 }
