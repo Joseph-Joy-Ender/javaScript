@@ -1,0 +1,30 @@
+body{
+    font-family: Tahoma, serif;
+    color: blue;
+    letter-spacing: 1px;
+    background-color: lightpink;
+}
+
+#info input{
+    font-size: 16px;
+    cursor: pointer;
+    width: 170px;
+
+}
+
+.header{
+    background-color: white;
+    width: 20rem;
+    height: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.submit{
+    width: 12rem;
+    height: 5rem;
+    margin-left: 3rem;
+    font-size: 20px;
+
+}
