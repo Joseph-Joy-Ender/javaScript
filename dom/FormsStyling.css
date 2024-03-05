@@ -14,17 +14,18 @@ body{
 }
 
 .header{
-    width: 30%;
-    height: 70vh;
+    width: 50%;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
+
     /*width: 20rem;*/
     /*height: 10rem;*/
-    /*padding-top: 3rem;*/
+    padding-top: 3rem;
     /*padding-bottom: 2rem;*/
-    /*padding-left: 2rem;*/
+    margin-left: 8rem;
 }
 
 .submit{
