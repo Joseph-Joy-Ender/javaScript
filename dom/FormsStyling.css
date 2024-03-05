@@ -8,23 +8,41 @@ body{
 #info input{
     font-size: 16px;
     cursor: pointer;
-    width: 170px;
+    /*width: 170px;*/
+    height: 2rem;
 
 }
 
 .header{
+    width: 30%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
-    width: 20rem;
-    height: 10rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
+    /*width: 20rem;*/
+    /*height: 10rem;*/
+    /*padding-top: 3rem;*/
+    /*padding-bottom: 2rem;*/
+    /*padding-left: 2rem;*/
 }
 
 .submit{
-    width: 12rem;
-    height: 5rem;
+    width: 20rem;
+    height: 8rem;
     margin-left: 3rem;
     font-size: 20px;
+    cursor: pointer;
 
+}
+
+.forms{
+    font-size: 1.9rem;
+}
+
+.submitButton{
+    width: 10rem;
+    height: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
 }
