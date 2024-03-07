@@ -5,46 +5,48 @@
     <title>Title</title>
 </head>
 <body>
-<!--<div class="firstDiv">Hello</div>-->
-<!--&lt;!&ndash;<a href="www.google.com">Google</a>&ndash;&gt;-->
+<div class="firstDiv">Precious is a foodie</div>
+<!--<a href="www.google.com">Google</a>-->
 
 
-<!--<button class="btn" id="btnId" >Click</button>-->
+<button class="btn" id="btnId" >Click</button>
 
 
 
-<div>
-    <div style="color: rgb(115, 110, 120) ">Welcome to my guess game</div>
-    <hr>
-    <label htmlFor="guess"> Guess A name
-        <br>
-        <input  class="guess"  value="" placeholder="enter a name"/>
-    </label>
-</div>
-<div class="response"> </div>
+<!--<div>-->
+<!--    <div style="color: rgb(115, 110, 120) ">Welcome to my guess game</div>-->
+<!--    <hr>-->
+<!--    <label htmlFor="guess"> Guess A name-->
+<!--        <br>-->
+<!--        <input  class="guess"  value="" placeholder="enter a name"/>-->
+<!--    </label>-->
+<!--</div>-->
+<!--<div class="response"> </div>-->
 <!--<p class="btn">No handler here</p>-->
 <script>
 
-let luckyName = "Joy";
-const userInput = document.querySelector(".guess");
-userInput.addEventListener('input', ()=>{
-    userInput.value===luckyName? document.querySelector(".response").innerHTML = "Congratulations"
-        : document.querySelector(".response").innerHTML="Try Again";
-})
+// let luckyName = "Joy";
+// const userInput = document.querySelector(".guess");
+// userInput.addEventListener('input', ()=>{
+//     userInput.value===luckyName? document.querySelector(".response").innerHTML = "Congratulations"
+//         : document.querySelector(".response").innerHTML="Try Again";
+// })
 
 
-    // let buttonId = document.getElementById("btnId");
-    // buttonId.addEventListener('click', function (){
-    //    const div = document.createElement('div');
-    //    div.innerHTML  = 'I love you';
-    //    document.querySelector(".firstDiv").appendChild(div)
-    // } )
-  // let button = document.querySelector(".btn");
-  // let allButtons = document.querySelectorAll('.btn');
+    let buttonId = document.getElementById("btnId");
+console.log(buttonId)
+    buttonId.addEventListener('click', function (){
+       const div = document.createElement('div');
+       div.innerHTML  = 'I love food';
+       document.querySelector(".firstDiv").replaceWith(div)
+           // .appendChild(div)
+    } )
+ //  let button = document.querySelector(".btn");
+ //  let allButtons = document.querySelectorAll('.btn');
  // button.addEventListener("click", () =>{
-     // for (let i = 0; i <allButtons.length ; i++) {
-     //     allButtons[i].innerHTML  = 'Joyyy';
-   //   }
+ //     for (let i = 0; i <allButtons.length ; i++) {
+ //         allButtons[i].innerHTML  = 'Joyyy';
+ //     }
  // });
 </script>
 </body>

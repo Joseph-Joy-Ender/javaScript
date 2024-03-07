@@ -1,0 +1,45 @@
+.container {
+
+    height: 800px;
+
+    width:800px;
+
+    box-sizing: border-box;
+
+    border:1px solid #000;
+
+    margin:0 auto;
+    right: -5rem;
+    /*text-align: center;*/
+    /*justify-content: center;*/
+
+}
+
+.row{
+    height: 100px;
+
+    width:800px;
+
+    display: flex;
+
+}
+
+.black{
+
+    height: 100px;
+
+    width:100px;
+
+    background-color: darkgray;
+
+}
+
+.white{
+
+    height: 100px;
+
+    width:100px;
+
+    background-color: yellow;
+
+}

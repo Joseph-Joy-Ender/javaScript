@@ -1,0 +1,61 @@
+body{
+    font-family: Tahoma, serif;
+    color: #444;
+    letter-spacing: 1px;
+}
+
+#wrapper{
+    background: #9361bf;
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+#page-banner{
+    /*background: #eee ;*/
+    background: yellowgreen;
+    padding: 10px 0;
+
+}
+
+#page-banner h1, #page-banner p{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#page-banner input{
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    padding: 8px;
+    /*border: 1px solid #ddd;*/
+    border-radius: 4px;
+    font-size: 16px;
+    color: #444;
+}
+
+.submitButton{
+    width: 10rem;
+    height: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.submit{
+    width: 20rem;
+    height: 8rem;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    margin-left: 20rem;
+    font-size: 20px;
+    cursor: pointer;
+
+}
