@@ -1,0 +1,25 @@
+body{
+    background-color: #9361bf;
+}
+
+.Header{
+    background: white;
+    width: 700px;
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+}
+
+.label{
+    border-radius: 10rem;
+}
+
+/*.plusSign{*/
+/*    font-size: 5rem;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.plus{*/
+/*    color: yellow;*/
+/*    padding-top: 2rem;*/
+/*}*/

@@ -41,24 +41,24 @@
 
 
 // const url = "https://www.omdbapi.com/?i=tt3896198&apikey=e18fe170";
-const url =
+// const url =
     // "https://api.themoviedb.org/3/movie/157336?api_key=c21352730c33a3fce0092102a285a244&append_to_response=videos,images";
     // "https://api.themoviedb.org/3/movie/157336/videos?api_key=c21352730c33a3fce0092102a285a244"
-    "https://api.themoviedb.org/3/movie/157336?api_key=c21352730c33a3fce0092102a285a244";
+    // "https://api.themoviedb.org/3/movie/157336?api_key=c21352730c33a3fce0092102a285a244";
 
-const options = {method: 'GET', headers:{accept: 'application/json'}};
-
-const getData = async () =>{
-    try {
-        const response = await fetch(url, options)
-        let result = await response.json()
-        console.log(result);
-    }catch (error){
-        console.log(error.message)
-    }
-}
-
-getData()
+// const options = {method: 'GET', headers:{accept: 'application/json'}};
+//
+// const getData = async () =>{
+//     try {
+//         const response = await fetch(url, options)
+//         let result = await response.json()
+//         console.log(result);
+//     }catch (error){
+//         console.log(error.message)
+//     }
+// }
+//
+// getData()
 
 
    // const fetch = require('node-fetch');
@@ -76,3 +76,18 @@ getData()
    //     .then(res => res.json())
    //     .then(json => console.log(json))
    //     .catch(err => console.error('error:' + err));
+
+  const url = "https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={5430012584721edbd884e1a338a98540}";
+   const options = {method: 'GET', headers:{accept: 'application/json'}};
+
+   const getData = async () =>{
+       try {
+           const response = await fetch(url, options)
+           let result = await response.json()
+           console.log(result);
+       }catch (error){
+           console.log(error.message)
+       }
+   }
+
+   getData()
